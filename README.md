@@ -32,3 +32,4 @@
 - Wrong ram speed display in About This Mac (shows half speed)
 - No 32-bit support
 - Can't run andriod emulator since android emulator only supports vt-x, but genymotion and virtualbox with amd-v support work well
+- Onboard microphone port not work
