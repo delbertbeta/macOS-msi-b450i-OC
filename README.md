@@ -1,31 +1,54 @@
 # OpenCore EFI for Ryzen 3600 &amp; MSI B450I Gaming Plus AC
 
-## Thanks to [OepnCore Vanilla Desktop Guide](https://khronokernel-2.gitbook.io/opencore-vanilla-desktop-guide/amd-config.plist/amd-config)
+Thanks to [Dortania's OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/)
+
 ## HW Builds
 
-| Type                 | Name                     |
-|----------------------|--------------------------|
-| CPU                  | Ryzen 3600               |
-| MB                   | MSI B450I Gaming Plus AC |
-| Audio                | ALC887                   |
-| GPU                  | Radeon RX 5500XT 8 GB    |
-| RAM                  | 32G DDR4 (16G * 2)       |
-| Wireless & Bluetooth | DW1560                   |
+<table>
+<tr>
+  <th>Type</th>
+  <th>Name</th>
+  <th></th>
+</tr>
+  <tr>
+    <td>CPU</td>
+    <td>AMD Ryzen 3600</td>
+    <td rowspan="6"><img width="200" src="/screenshot/screenshot.png"></td>
+  </tr>
+  <tr>
+    <td>Motherboard</td>
+    <td>MSI B450I Gaming Plus AC</td>
+  </tr>
+  <tr>
+    <td>Audio</td>
+    <td>ALC887</td>
+  </tr>
+  <tr>
+    <td>GPU</td>
+    <td>Radeon RX 5500XT 8GB</td>
+  </tr>
+  <tr>
+    <td>RAM</td>
+    <td>32G DDR4 (16G * 2)</td>
+  </tr>
+  <tr>
+    <td>Wireless &amp; Bluetooth</td>
+    <td>Wireless-AC 9260</td>
+  </tr>
+</table>
 
 ## Functional
 
 - [x] CPU by [AMD-Vanilla](https://github.com/AMD-OSX/AMD_Vanilla)
-- [x] USB by [Opencore-Vanilla-Desktop-Guide](https://github.com/khronokernel/Opencore-Vanilla-Desktop-Guide/blob/master/AMD/AMD-USB-map.md)
-- [x] Audio by [AppleALC](https://github.com/acidanthera/AppleALC) (alcid=7)
+- [x] USB by [USBToolBox](https://github.com/USBToolBox/tool)
+- [x] Audio by [AppleALC](https://github.com/acidanthera/AppleALC) (alcid=6)
 - [x] Graphics by [WhateverGreen](https://github.com/acidanthera/WhateverGreen)
-- [x] WIFI by [AirportBrcmFixup](https://github.com/acidanthera/AirportBrcmFixup) (brcmfx-country=#a)
-- [x] Bluetooth by [BrcmPatchRAM](https://github.com/RehabMan/OS-X-BrcmPatchRAM)
-- [x] iMessage / FaceTime / Airdrop / Handoff
+- [x] WIFI by [itlwm](https://openintelwireless.github.io/itlwm/)
+- [x] Bluetooth by [IntelBluetoothFirmware](https://openintelwireless.github.io/IntelBluetoothFirmware/)
 
 ## Notice
 
 - **Please generator your own SMBIOS using [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS)**.
-- If you are using Adobe software, please refer to this article [Adobe fix](https://kb.amd-osx.com/guides/adobe).
 
 ## Issues
 
@@ -33,3 +56,4 @@
 - No 32-bit support
 - Can't run andriod emulator since android emulator only supports vt-x, but genymotion and virtualbox with amd-v support work well
 - Onboard microphone port not work
+- Airdrop / Handoff not work due to Intel bluetooth
